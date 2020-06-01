@@ -1,0 +1,56 @@
+body{
+  background-color: #D976DE;
+  color:white;
+  position: absolute;
+  top:50%;
+  left:50%;
+  margin-left:-300px;
+  margin-top:-50px;
+  transition: 0.5s;
+}
+
+body p:hover{
+  color:#fff;
+  text-shadow: 0 10px 7px rgba(0,0,0,.3);
+}
+
+#triangle-bottomright {
+   border-bottom: 250px solid white;
+   border-left: 250px solid transparent;
+   position: fixed;
+   bottom: 0;
+   right: 0;
+}
+
+#triangle-topleft {
+   border-top: 250px solid white;
+   border-right: 250px solid transparent;
+   position: fixed;
+   top: 0;
+   left: 0;
+}
+
+.tri{
+  width: 0;
+  height: 0;
+}
+
+#parallelogram-down {
+  width: 70%;
+  height: 150px;
+  transform: skew(-45deg);
+  background: #3F2953;
+  position: fixed;
+  bottom: 0;
+  left: -10%;
+}
+
+#parallelogram-up {
+  width: 70%;
+  height: 150px;
+  transform: skew(-45deg);
+  background: #3F2953;
+  position: fixed;
+  top: 0;
+  right: -10%;
+}

@@ -1,0 +1,14 @@
+{
+  "name": "appbase-js",
+  "homepage": "https://github.com/appbaseio/appbase-js",
+  "version": "3.2.0",
+  "_release": "3.2.0",
+  "_resolution": {
+    "type": "version",
+    "tag": "v3.2.0",
+    "commit": "83ae5186cda742ff1a1aed4405e39e9dc3780af7"
+  },
+  "_source": "https://github.com/appbaseio/appbase-js.git",
+  "_target": "^3.2.0",
+  "_originalSource": "appbase-js"
+}

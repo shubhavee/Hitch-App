@@ -1,0 +1,54 @@
+{
+  "name": "meetupblast",
+  "version": "0.0.1",
+  "description": "A twitter like live search feed built with appbase.io and react.js",
+  "main": "src/app.js",
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/appbaseio/meetupblast.git"
+  },
+  "keywords": [
+    "appbase.io",
+    "react.js",
+    "live",
+    "feed",
+    "twitter",
+    "realtimeapp"
+  ],
+  "author": "Siddharth Kothari",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/appbaseio/meetupblast/issues"
+  },
+  "homepage": "https://github.com/appbaseio/meetupblast#readme",
+  "dependencies": {
+    "bower": "^1.8.8",
+    "browserify": "^13.3.0",
+    "gulp": "^3.9.1",
+    "gulp-install": "^1.1.0",
+    "react": "^15.1.0",
+    "react-dom": "^15.1.0",
+    "react-scripts": "^3.4.1",
+    "reactify": "^1.1.1",
+    "vinyl-source-stream": "^1.1.2"
+  },
+  "devDependencies": {},
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}

@@ -1,0 +1,12 @@
+engines:
+  eslint:
+    enabled: true
+    channel: "eslint-3"
+ratings:
+  paths:
+    - "src/**"
+exclude_paths:
+  - "browser/**"
+  - "dist/**"
+  - "meteor/**"
+  - "node_modules/**"

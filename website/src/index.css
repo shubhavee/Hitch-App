@@ -1,0 +1,32 @@
+html{
+  min-height: 100%;
+}
+
+body{
+  margin:0;
+  padding:0;
+  background-color: #D976DE;
+  background-size: 100%;
+  background-position: bottom;
+  min-height: 100%;
+}
+
+form{
+  padding:20px;
+  margin-top: 15%;
+  max-width: 60%;
+  position: relative;
+  left: 22%;
+}
+
+form button, form h5{
+  margin: 10px 0;
+}
+
+input[type=text]:not(.browser-default):focus:not([readonly]),
+input[type=email]:not(.browser-default):focus:not([readonly]),
+input[type=password]:not(.browser-default):focus:not([readonly]),
+textarea.materialize-textarea:focus:not([readonly]){
+  border-color: black;
+  box-shadow:none;
+}

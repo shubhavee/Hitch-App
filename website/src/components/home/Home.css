@@ -1,0 +1,113 @@
+body{
+  background-color: #D976DE;
+}
+
+#p_outer{
+  margin-top: 20%;
+  margin-left: 20%;
+  margin-bottom: -20px;
+  font-family: League Spartan Bold;
+  color: white;
+  font-size:22px;
+  padding-bottom:60px;
+  padding-top:60px;
+}
+
+#p_inner{
+  font-family: League Spartan;
+}
+
+@media (max-width: 979px) {
+  body {
+    padding-top: 0px;
+  }
+}
+
+#p_outer span{
+  font-size:66px;
+}
+
+
+
+#p_outer:hover{
+      background-image: url(./main_gif.gif);
+      background-size: cover;
+
+      margin-left: -250px;
+      margin-top: -10px;
+      min-width: 1530px;
+      min-height: 760px;
+
+      padding-top: 27%;
+      padding-left: 45%;
+
+      /* opacity:0; */
+      /* transition-duration:0.5s; */
+}
+
+#p_outer:hover #p_inner{
+      margin-left: -200px;
+      margin-top: -20px;
+
+      padding-top: 35px;
+}
+
+#triangle-bottomright {
+   border-bottom: 250px solid white;
+   border-left: 250px solid transparent;
+   position: fixed;
+   bottom: 0;
+   right: 0;
+}
+
+#triangle-topleft {
+   border-top: 300px solid white;
+   border-right: 300px solid transparent;
+   position: fixed;
+   top: 0;
+   left: 0;
+}
+
+.tri{
+  width: 0;
+  height: 0;
+}
+
+#parallelogram-down {
+  width: 70%;
+  height: 130px;
+  transform: skew(-45deg);
+  background: #3F2953;
+  position: fixed;
+  bottom: 0;
+  left: -10%;
+}
+
+#parallelogram-up {
+  width: 66%;
+  height: 175px;
+  transform: skew(-45deg);
+  background: #3F2953;
+  position: fixed;
+  top: 0;
+  right: -8%;
+}
+
+#loginButton{
+  margin-left:23%;
+  width:15%;
+  border-radius: 75px;
+  margin-top: -10px;
+  z-index: 1;
+}
+
+#signupButton{
+  border: none;
+  margin-left:5%;
+  width:15%;
+  border-radius: 75px;
+  margin-top: -10px;
+  overflow: hidden;
+  z-index: 1;
+
+}

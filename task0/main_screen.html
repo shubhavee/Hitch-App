@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link href="http://allfont.net/allfont.css?fonts=league-spartan" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="./main_screen.css">
+  </head>
+  <body>
+    <p onmouseover="javascript:changeBg()" onmouseout="javascript:changeColorBg('#D976DE')" style="color:white;font-family:League Spartan Bold;font-size:22px"><span style="font-size:66px;">HITCH.</span> CONNECT,  ATTEND  AND  NETWORK</p>
+    <div id="triangle-bottomright" class="tri"></div>
+    <div id="triangle-topleft" class="tri"></div>
+    <div id="parallelogram-down"></div>
+    <div id="parallelogram-up"></div>
+
+    <script type="text/javascript">
+      function changeColorBg(color){
+        document.body.style.background=color;
+        document.getElementById("parallelogram-up").style.background="#3F2953";
+        document.getElementById("parallelogram-down").style.background="#3F2953";
+
+      }
+      function changeBg(){
+        document.body.style.backgroundImage="url('network.png')";
+        document.getElementById("parallelogram-up").style.background="black";
+        document.getElementById("parallelogram-down").style.background="black";
+      }
+    </script>
+  </body>
+</html>
