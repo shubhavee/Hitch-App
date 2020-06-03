@@ -4,7 +4,8 @@ import './App.css';
 import SignIn from './components/auth/SignIn.js'
 import Navbar from './components/layout/Navbar';
 import Home from './components/home/Home.js';
-import SignUp from './components/auth/SignUp.js'
+import SignUp from './components/auth/SignUp.js';
+import User from './components/profile/User.js'
 
 class App extends React.Component{
 
@@ -17,7 +18,8 @@ class App extends React.Component{
             <Route exact path='/' component={Home} />
             <Route exact path='/signin' component={SignIn} />
             <Route exact path='/signup' component={SignUp} />
-          </Switch>
+            <Route path="/user/:id" component={User} />
+        </Switch>
         </div>
       </BrowserRouter>
 
