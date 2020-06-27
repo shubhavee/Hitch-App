@@ -10,3 +10,46 @@
     height:100%;
     min-width:100%;
 }
+
+form{
+  border: 1px solid white;
+  box-shadow: 0px 0px 15px 20px rgba(0,0,0,0.8);
+  background-color: black;
+  color: white;
+}
+
+#signin_signup{
+  float: left;
+}
+
+#colorful_text{
+  float: right;
+}
+
+#colorful_text:before{
+  content:'Events';
+  font-size: 34px;
+  font-weight: bold;
+  text-decoration: underline;
+  /* text-decoration-style: solid; */
+  animation:animate infinite 8s;
+}
+
+@keyframes animate{
+  0%{
+    content:'Community';
+    color:#C1C85D;
+    text-shadow: 0 0 20px #C1C85D;
+  }
+  50%{
+    content:'You';
+    color:indigo;
+    text-shadow: 0 0 20px indigo;
+  }
+  100%{
+    content: 'Events';
+    color:pink;
+    text-shadow: 0 0 20px pink;
+
+  }
+}

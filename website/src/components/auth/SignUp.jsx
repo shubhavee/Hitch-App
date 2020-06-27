@@ -1,4 +1,5 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
+import axios from 'axios';
 import './Styling.css'
 
 class SignUp extends Component {
@@ -8,7 +9,7 @@ class SignUp extends Component {
     password:'',
     firstName:'',
     lastName:'',
-
+    loginErrors:'',
   }
 
   handleChange=(e)=>{
@@ -18,16 +19,45 @@ class SignUp extends Component {
   }
 
   handleSubmit=(e)=>{
-    e.preventDefault();
-    console.log(this.state);
+
+    const {email,password,firstName,lastName}=this.state;
+    const proxyurl = "https://cors-anywhere.herokuapp.com/";
+    const url = "http://139.59.25.107:3900/api/users/";
+
+    // axios
+    //   .post(
+    //     (proxyurl+url),
+    //     {
+    //       user:{
+    //         email:email,
+    //         password: password,
+    //         firstName: firstName,
+    //         lastName: lastName
+    //       }
+    //     },
+    //     {withCredentials: true}
+    //   )
+    //   .then(response=>{
+    //     console.log("res from login", response);
+    //   })
+    //   .catch(error=>{
+    //     console.log("registration error", error);
+    //   });
+
+    // const res = axios.get(`https://cors-anywhere.herokuapp.com/http://139.59.25.107:3900/api/users/5ef0b2c92f34ea2fea570d1f`);
+    // console.log(res)
+      e.preventDefault();
   }
 
   render () {
     return (
       <div className="container" id="sea_background">
-        <form onSubmit={this.handleSubmit} className="white">
-        <h5 className="grey-text text-darken-3">Sign Up</h5>
-        <div className="input-field">
+        <form onSubmit={this.handleSubmit}>
+        <h5 id="signin_signup" className="white-text text-darken-3"><strong>Sign Up</strong></h5>
+        <h5><span id="colorful_text"></span></h5>
+        <br />
+        <br />
+      <div className="input-field">
           <label htmlFor="email">Email</label>
           <input type="email" id="email" onChange={this.handleChange} />
         </div>
